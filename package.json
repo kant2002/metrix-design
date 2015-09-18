@@ -1,0 +1,23 @@
+{
+  "name": "@metrix/design",
+  "version": "1.0.0",
+  "description": "Common design resources for all Metrix products",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sytex-company/metrix-design.git"
+  },
+  "keywords": [
+    "Metrix",
+    "design"
+  ],
+  "author": "Andrey Kurdyumov <kant2002@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sytex-company/metrix-design/issues"
+  },
+  "homepage": "https://github.com/sytex-company/metrix-design#readme"
+}

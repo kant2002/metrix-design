@@ -1,0 +1,32 @@
+﻿/* 
+  In this file placed overrides for the Bootstrap.
+  To say true we should compile Bootstrap from sources to customize these 
+  values instead of overriding. But due to my current limitation in time, 
+  I not able to setup proper build.
+*/
+
+.label {
+  color: $placeholder_color;
+  font-size: 100%; // This is really wierd. We should make other font sizez dependent on context.
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn-danger {
+    //color: #fff;
+    //background-color: #d9534f;
+    //border-color: #d43f3a;
+}
+
+.btn-success {
+    //color: #fff;
+    //background-color: #fc584f;
+    //border-color: #fc584f;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+

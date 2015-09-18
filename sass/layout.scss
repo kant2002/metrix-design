@@ -1,0 +1,383 @@
+﻿.tab_controls {
+	z-index      : 2;
+	position     : absolute;
+	left         : 0;
+	right        : 0;
+	top          : 0;
+	padding-left : 10px;
+	@include flex_block(row nowrap, flex-start, stretch);
+
+	.block_caption {
+		position     : relative;
+		float        : left;
+		line-height  : 50px;
+		margin-right : 6px;
+		padding-left : 30px;
+
+		&:after {
+			right : 0;
+			left  : 0;
+		}
+
+		span {
+			display        : inline-block;
+			vertical-align : middle;
+			line-height    : normal;
+		}
+
+		&.first_tab_caption {
+			width : 46.8%;
+
+			.tab_link {
+				.active_tab_1 & {
+					@include respond-to-max($wide_3) {
+						cursor : default;
+						color  : #27b9f2;
+
+						&:before {
+							z-index      : 1;
+							content      : '';
+							position     : absolute;
+							bottom       : -5px;
+							left         : 50%;
+							margin-left  : -5px;
+							width        : 10px;
+							height       : 10px;
+							background   : #fff;
+							border       : solid #eee;
+							border-width : 1px 1px 0 0;
+							@include transform_rotate_no_check(-45);
+						}
+
+						span {
+							text-decoration : none;
+						}
+					}
+				}
+			}
+		}
+
+		&.second_tab_caption {
+			.tab_link {
+				.active_tab_2 & {
+					@include respond-to-max($wide_1) {
+						cursor : default;
+						color  : #27b9f2;
+
+						&:before {
+							z-index      : 1;
+							content      : '';
+							position     : absolute;
+							bottom       : -5px;
+							left         : 50%;
+							margin-left  : -5px;
+							width        : 10px;
+							height       : 10px;
+							background   : #fff;
+							border       : solid #eee;
+							border-width : 1px 1px 0 0;
+							@include transform_rotate_no_check(-45);
+						}
+
+						span {
+							text-decoration : none;
+						}
+					}
+				}
+
+				.active_tab_1 & {
+					@include respond-min-max($wide_3, $wide_1) {
+						cursor : default;
+						color  : #27b9f2;
+
+						&:before {
+							z-index      : 1;
+							content      : '';
+							position     : absolute;
+							bottom       : -5px;
+							left         : 50%;
+							margin-left  : -5px;
+							width        : 10px;
+							height       : 10px;
+							background   : #fff;
+							border       : solid #eee;
+							border-width : 1px 1px 0 0;
+							@include transform_rotate_no_check(-45);
+						}
+
+						span {
+							text-decoration : none;
+						}
+					}
+				}
+			}
+		}
+
+		&.third_tab_caption {
+			margin-right : 0;
+
+			.tab_link {
+				.active_tab_3 & {
+					@include respond-to-max($wide_1) {
+						cursor : default;
+						color  : #27b9f2;
+
+						&:before {
+							z-index      : 1;
+							content      : '';
+							position     : absolute;
+							bottom       : -5px;
+							left         : 50%;
+							margin-left  : -5px;
+							width        : 10px;
+							height       : 10px;
+							background   : #fff;
+							border       : solid #eee;
+							border-width : 1px 1px 0 0;
+							@include transform_rotate_no_check(-45);
+						}
+
+						span {
+							text-decoration : none;
+						}
+					}
+				}
+			}
+		}
+
+		@include respond-to-max($wide_1) {
+			padding-left : 20px;
+
+			&.first_tab_caption {
+				width : 61.5%;
+			}
+
+			&.second_tab_caption {
+				position : static;
+
+				&:after {
+					right : 0;
+					left  : 62.3%;
+				}
+
+			}
+
+			&.third_tab_caption {
+				//				left : 49%;
+			}
+
+		}
+
+		@include respond-to-max($wide_2) {
+
+			&.first_tab_caption {
+				//				width : 40.5%;
+			}
+
+			&.second_tab_caption {
+			}
+
+			&.third_tab_caption {
+				//				left : 49%;
+			}
+
+		}
+
+		@include respond-to-max($wide_3) {
+
+			&.first_tab_caption {
+				width : auto;
+			}
+
+			&.second_tab_caption {
+
+				&:after {
+					left : 0;
+				}
+			}
+
+			&.third_tab_caption {
+				//				left : 49%;
+			}
+
+		}
+
+		@include respond-to-min($wide_1) {
+
+			&.first_tab_caption {
+			}
+
+			&.second_tab_caption {
+				width : 56%;
+			}
+
+			&.third_tab_caption {
+				width : 44%;
+			}
+		}
+	}
+
+	@include respond-to-max($wide_1) {
+	}
+}
+
+.tab_link {
+	position        : relative;
+	display         : inline-block;
+	text-decoration : none;
+	//	padding         : 0 19px;
+	color           : inherit;
+	@include transition_all(color .3s);
+
+	span {
+		display        : inline-block;
+		vertical-align : middle;
+		line-height    : normal;
+	}
+
+	&:hover {
+		span {
+			text-decoration : underline;
+		}
+	}
+}
+
+.tab_controls_w {
+	float : left;
+	@extend %global_flex_block_row_wrap_flex-start_stretch;
+	//	@include flex_block(row nowrap, flex-start, stretch);
+
+	@include respond-to-min($wide_1) {
+		@include flex(1 auto);
+	}
+
+	@include respond-to-max($wide_3) {
+		//		@include flex_block(row nowrap, flex-start, stretch);
+	}
+}
+
+.general_w {
+	@extend %clearfix;
+	@include flex(1);
+	@extend %global_flex_block_row_wrap_flex-start_stretch;
+	margin-right : -100%;
+
+	@include respond-to-min($wide_3) {
+		margin-right : -38.5%;
+	}
+
+	@include respond-to-min($wide_1) {
+		margin-right : 0;
+	}
+
+}
+
+.content_general_col,
+.content_graph_col,
+.content_info_col {
+	padding-left : 10px;
+	float        : left;
+	//@extend %translate3d;
+	@extend %global_flex_block_row_wrap_flex-start_stretch;
+}
+
+.content_box {
+	width    : 100%;
+	position : relative;
+	padding  : 65px 30px 20px;
+	@extend %white_box;
+	//	@include flex(1);
+
+	@include respond-to-max($wide_1) {
+		padding : 65px 20px 20px;
+	}
+}
+
+.content_general_col {
+	min-width : 350px;
+	//	width     : 31%;
+	width     : 55.5%;
+
+	//	max-width : 480px;
+
+	@include respond-to-max($wide_1) {
+		max-width : 50%;
+		min-width : 0;
+		@include flex(1 auto);
+	}
+
+	@include respond-to-max($wide_3) {
+		max-width : 100%;
+		min-width : 100%;
+		width     : 100%;
+
+		.active_tab_2 & {
+			@include transform_translate(-100%, 0);
+		}
+	}
+}
+
+.content_graph_col_inner {
+	width : 100%;
+	@extend %global_flex_block_row_wrap_flex-start_stretch;
+
+	//	position : absolute;
+	//	top      : 0;
+	//	bottom   : 0;
+	//	left     : 9px;
+	//	right    : 0;
+
+	@include respond-to-max($wide_1) {
+		//		transform   : translate(-100%, 0);
+		//		margin-left : 0;
+		//		width       : 100%;
+		//		min-width   : 780px;
+	}
+
+	@include respond-to-max($wide_2) {
+		//		min-width : 480px;
+	}
+
+}
+
+.content_graph_col {
+	//		min-width : 550px;
+	//	min-width : 780px;
+	position  : relative;
+	max-width : 47%;
+	width     : 100%;
+	//		max-width : 780px;
+
+	@include respond-to-max($wide_1) {
+		max-width : 61.5%;
+	}
+
+	@include respond-to-max($wide_3) {
+		max-width : 100%;
+	}
+}
+
+.content_info_col {
+	min-width : 320px;
+	width     : 44.5%;
+
+	@include respond-to-max($wide_1) {
+		max-width : 50%;
+		width     : 50%;
+
+		.active_tab_3 & {
+			@include transform_translate(-100%, 0);
+		}
+	}
+
+	@include respond-to-max($wide_3) {
+		max-width : 100%;
+		min-width : 100%;
+		width     : 100%;
+
+		.active_tab_3 & {
+			@include transform_translate(-200%, 0);
+		}
+	}
+}
+

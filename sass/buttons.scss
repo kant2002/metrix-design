@@ -1,0 +1,99 @@
+﻿.btn_v1 {
+	height          : 35px;
+	text-decoration : none;
+
+  //&:before {
+	//	position  : absolute;
+	//	color     : inherit;
+	//	font-size : 14px;
+	//	@extend %hor_vert_centr;
+	//}
+  //
+  //&.has_icon {
+  //  i {
+  //    margin-left: 1em;
+  //  }
+  //}
+
+	&.filter_btn {
+		position    : relative;
+		min-width   : 35px;
+		margin-left : 10px;
+		@extend %metrix-filter-icon;
+
+		&:before {
+			position  : absolute;
+			font-size : 14px;
+			color     : #4e5f6f;
+			@extend %hor_vert_centr;
+		}
+
+	}
+
+	&.report_btn {
+		width          : 72%;
+		min-width      : 125px;
+		max-width      : 220px;
+		cursor         : pointer;
+		padding        : 9px 5px;
+		margin         : 0 9px 9px 0;
+		font-size      : 11px;
+		line-height    : 17px;
+		text-transform : uppercase;
+		font-weight    : 600;
+		text-align     : center;
+		@extend %metrix-icon-report;
+
+		&:before {
+			display        : inline-block;
+			vertical-align : top;
+			width          : 12px;
+			height         : 14px;
+			margin         : 0 9px 0 0;
+			color          : inherit;
+			font-size      : 18px;
+
+			@include respond-to-min($wide_0) {
+				margin-left : 9px;
+			}
+		}
+	}
+
+	&.attention_btn {
+		position      : relative;
+		width         : 35px;
+		margin-bottom : 9px;
+		@extend %metrix-icon-worring;
+
+		&:before {
+			position  : absolute;
+			color     : inherit;
+			font-size : 14px;
+			@extend %hor_vert_centr;
+		}
+	}
+
+}
+
+.btn_blue {
+	color      : #fff;
+	background : #25aae1;
+	@include transition_all(background .3s, color .3s);
+
+	&:hover {
+		background : #2595c7;
+	}
+}
+
+.btn_white {
+	background    : #f9f9f9;
+	border        : 1px solid #ddd;
+	border-radius : 1px;
+	color         : #4e5f6f;
+	box-shadow    : inset 0 0 0 1px #fff;
+	@include transition_all(background .3s, border-color .3s, color .3s);
+
+	&:hover {
+		border-color : #999;
+	}
+}
