@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/sytex-company/metrix-design/issues"
   },
-  "homepage": "https://github.com/sytex-company/metrix-design#readme"
+  "homepage": "https://github.com/sytex-company/metrix-design#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^3.0.2",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-sass": "^2.0.4",
+    "lodash": "^3.10.0",
+    "require-dir": "^0.3.0"
+  }
 }

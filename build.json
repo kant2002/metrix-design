@@ -1,0 +1,11 @@
+{
+    "icons": {
+        "src": "font_icons/*.svg",
+        "fontName": "metrix_icons",
+        "template": "templates/font_icons.scss"
+    },
+    "styles": {
+		"sassFolder": "sass",
+		"entryPoint": "sass/main_global.scss"
+	}
+}
