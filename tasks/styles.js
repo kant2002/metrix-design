@@ -43,5 +43,6 @@ gulp.task("styles:main", [], function () {
     // Optionally add autoprefixer
     .pipe(plugins.autoprefixer("last 2 versions", "> 1%", "ie 8"))
     // These last two should look familiar now :)
+    .pipe(plugins.rename("metrix-bootstrap.css"))
     .pipe(gulp.dest("./"));
 });
