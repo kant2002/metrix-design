@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../public/css/metrix-reset.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/metrix-bootstrap.css">
+  <style>
+    h1 {
+      margin-left: 1em;
+    }
+    
+    .line {
+      margin: 1em 1em auto;
+    }
+    
+    .block {
+      max-width: 500px;
+      border: 1px;
+    }
+    
+    .lineIcon {
+      max-width: 500px;
+      margin: 1em 1em auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div data-rails_class="nicescroll_vd1" class="wrapper nicescrollBlock_ scrollbar-inner">
+    <div class="aside ng-scope" ng-controller="AsideCtrl">
+      <a href="#" class="logo asideToggleBtn">
+        <svg class="logo_img">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#metrix-logo"></use>
+        </svg>
+        <span class="logo_text"><b>A Side</b></span>
+      </a>
+
+      <div aside-panel="/app/modules/menu/staff.html" template-url="/app/modules/menu//app/modules/menu/staff.html.html">
+        
+      </div>
+
+    </div>
+    <div class="base">
+      <div class="header">
+        <div class="section_inner">
+
+        </div>
+      </div>
+      <!-- ngView -->
+      <div ui-viewbar="" ng-class="navtab" ng-init="navtab='active_tab_1'" class="main_content graph_holder_mode graphHolder ng-scope active_tab_1">
+        <div class="tab_controls">
+          <h3 class="block_caption first_tab_caption">
+    <a href="" data-tab_idex="1" class="tab_link tabBtn"><span>Main Block</span></a>
+  </h3>
+          <div class="tab_controls_w">
+            <h3 class="block_caption second_tab_caption">
+      <a href="" data-tab_idex="2"  class="tab_link tabBtn"><span>Panel one</span></a>
+    </h3>
+            <h3 class="block_caption third_tab_caption">
+      <a href="" data-tab_idex="3"  class="tab_link tabBtn"><span>Panel two</span></a>
+    </h3>
+          </div>
+          <div class="loading_tip">LOADING</div>
+        </div>
+        <div class="content_graph_col">
+          <div class="content_graph_col_inner">
+            <div class="content_box">
+              <staff-person-list>
+                <div class="info_block">
+
+                </div>
+              </staff-person-list>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="general_w">
+          <div class="content_general_col">
+            <div class="content_box" ng-hide="currentPerson">
+
+            </div>
+          </div>
+
+
+          <div class="content_info_col">
+            <div class="content_box">
+              <div class="info_block">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+</html>
