@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../public/css/metrix-reset.css">
+<link rel="stylesheet" type="text/css" href="../public/css/metrix-bootstrap.css">
+<style>
+	h1 {
+		margin-left: 1em;
+	}
+	.line {
+ 	 margin: 1em 1em auto;}
+	
+	.block {
+		max-width:500px;
+		border: 1px;}
+	.lineIcon{
+		max-width:500px;
+		margin: 1em 1em auto;}
+		
+</style>
+</head>
+<body>
+			<div class="header">
+					<div class="section_inner">
+						<ul class="overflow_catcher overflowCatcher"><li class="main_m_item ng-scope" ng-repeat="(index, section) in sections" ng-class="{ 'active': activeSection == section }">
+							<a href="#/contruct" class="main_m_link ng-binding" ng-click="setActiveSection(section)">
+							CONSTRUCTION SITE
+							</a>
+						</li></ul>
+						<div class="humburger_holder">
+						<a href="#" class="main_m_btn menuToggleBtn">
+							<div class="humburger_counter humburgerCounter">1</div>
+						</a>
+						</div>
+			
+						<ul class="main_menu mainMenu ng-scope" ng-controller="TopCtrl">
+						<!-- ngRepeat: (index, section) in sections --><li class="main_m_item ng-scope" ng-repeat="(index, section) in sections" ng-class="{ 'active': activeSection == section }">
+							<a href="#/dashboard" class="main_m_link ng-binding" ng-click="setActiveSection(section)">
+							DASHBOARD
+							</a>
+						</li><!-- end ngRepeat: (index, section) in sections --><li class="main_m_item ng-scope" ng-repeat="(index, section) in sections" ng-class="{ 'active': activeSection == section }" style="">
+							<a href="#/staff" class="main_m_link ng-binding" ng-click="setActiveSection(section)">
+							STAFF
+							</a>
+						</li><!-- end ngRepeat: (index, section) in sections --><li class="main_m_item ng-scope" ng-repeat="(index, section) in sections" ng-class="{ 'active': activeSection == section }">
+							<a href="#/production" class="main_m_link ng-binding" ng-click="setActiveSection(section)">
+							PRODUCTION
+							</a>
+						</li><!-- end ngRepeat: (index, section) in sections --><li class="main_m_item ng-scope" ng-repeat="(index, section) in sections" ng-class="{ 'active': activeSection == section }">
+							<a href="#/stock" class="main_m_link ng-binding" ng-click="setActiveSection(section)">
+							STOCK
+							</a>
+						</li><!-- end ngRepeat: (index, section) in sections --><li class="main_m_item ng-scope active" ng-repeat="(index, section) in sections" ng-class="{ 'active': activeSection == section }" style="">
+							<a href="#/distrib" class="main_m_link ng-binding" ng-click="setActiveSection(section)">
+							DISTRIBUTION
+							</a>
+						</li><!-- end ngRepeat: (index, section) in sections --><!-- end ngRepeat: (index, section) in sections -->
+						</ul>
+			
+						<div class="user_menu_holder userMenuBlock">
+						<div class="user_avatar">
+							<img src="img/user_2.png" class="user_photo">
+							<ul class="user_menu">
+							<li class="user_m_item">
+								<a href="#" class="main_m_link mod_stock">Stock</a>
+							</li>
+							<li class="user_m_item">
+								<a href="#" class="main_m_link mod_stock">Stock</a>
+							</li>
+							<li class="user_m_item">
+								<a href="#" class="main_m_link mod_stock">Stock</a>
+							</li>
+							<li class="user_m_item">
+								<a href="#" class="main_m_link mod_stock">Stock</a>
+							</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+				</div>
+</body>
+</html>
