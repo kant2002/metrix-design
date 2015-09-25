@@ -44,5 +44,16 @@ gulp.task("styles:main", [], function () {
     .pipe(plugins.autoprefixer("last 2 versions", "> 1%", "ie 8"))
     // These last two should look familiar now :)
     .pipe(plugins.rename("metrix-bootstrap.css"))
-    .pipe(gulp.dest("./"));
+    .pipe(gulp.dest("public/css/"));
+});
+
+gulp.task("styles:reset", [], function () {
+    return gulp.src(config.styles.resetFile)
+    // The onerror handler prevents Gulp from crashing when you make a mistake in your SASS
+    .pipe(plugins.sass({ onError: function (e) { console.log(e); } }))
+    // Optionally add autoprefixer
+    .pipe(plugins.autoprefixer("last 2 versions", "> 1%", "ie 8"))
+    // These last two should look familiar now :)
+    .pipe(plugins.rename("metrix-reset.css"))
+    .pipe(gulp.dest("public/css/"));
 });

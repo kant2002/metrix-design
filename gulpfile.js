@@ -3,7 +3,7 @@ var gulp = require("gulp"),
 
 requireDir("tasks");
 
-gulp.task("styles:web", ["styles:main"]);
+gulp.task("styles:web", ["styles:main", "styles:reset"]);
 gulp.task("styles", ["styles:generate_icons_scss"], function () {
     gulp.run("styles:web");
 });

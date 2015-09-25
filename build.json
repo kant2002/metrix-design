@@ -6,6 +6,7 @@
     },
     "styles": {
 		"sassFolder": "sass",
-		"entryPoint": "sass/main_global.scss"
+		"entryPoint": "sass/main_global.scss",
+        "resetFile": "sass/reset_global.scss"
 	}
 }
