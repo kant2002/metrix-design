@@ -1,0 +1,153 @@
+﻿.card-print-preview {
+  font-family: 'MyriadProRegular';
+  width: 405px;
+  margin: 0 auto;
+  border: 1px solid grey;
+  position: relative;
+}
+
+.header-background {
+  height: 240px;
+  width: 100%;
+}
+.level-1 .header-background,
+.level-1 .card-image {
+  background-color: #859ad6 !important;
+}
+.level-2 .header-background,
+.level-2 .card-image {
+  background-color: #d685b1 !important;
+}
+.level-3 .header-background,
+.level-3 .card-image {
+  background-color: #cbccd0 !important;
+}
+.level-4 .header-background,
+.level-4 .card-image {
+  background-color: #85d6a0 !important;
+}
+.level-5 .header-background,
+.level-5 .card-image {
+  background-color: #fc8a3e !important;
+}
+
+.main-card-info {
+  height: 229px;
+  padding-top: 65px;
+}
+
+.card-person-name,
+.card-person-department,
+.card-person-title {
+  text-align: center;
+}
+
+.card-person-name {
+  font-size: 30px;
+  color: black !important;
+  padding-bottom: 10px;
+}
+
+.card-person-department,
+.card-person-title {
+  font-size: 21px;
+  color: #454545 !important;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.card-image {
+  border-radius: 50%;
+  border: 5px solid white !important;
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  top: 30px;
+  left: calc((405px - 260px) / 2);
+  //background-color: red;
+}
+.card-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card-access-level {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-access-level .metrix-icon-star-full {
+  color: #f1cb30 !important;
+}
+
+.card-access-level svg {
+  width: 23px;
+}
+
+.card-access-level .metrix-icon-star-full,
+.card-access-level svg {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.card-number {
+  height: 25px;
+  color: white !important;
+  background-color: black !important;
+  text-align: center;
+  padding: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'MyriadProBold';
+}
+
+.card-footer {
+  height: 145px;
+}
+
+.card-company-info {
+  width: 250px;
+  height: 150px;
+  padding: 15px 20px;
+  float: left;
+}
+
+.card-company-info p {
+  line-height: 20px;
+  font-size: 17px;
+  color: #454545 !important;
+}
+
+.card-qr-holder {
+  width: 150px;
+  height: 150px;
+  float: right;
+  padding: 20px;
+}
+
+.card-company-logo {
+  height: 45px;
+  margin-bottom: 8px;
+  padding-top: 5px;
+}
+.card-company-logo img {
+  height: 37px;
+}
+
+
+@page card-print-preview {
+    size: 54mm 86mm;
+    margin: 0 0 0 0;
+    mso-header-margin: 0;
+    mso-footer-margin: 0;
+    mso-paper-source: 0;
+}
+
+@media (print) {
+    .card-print-preview {
+        //page: card-print-preview;
+    }
+}
+
+// Zebra printing has scale ration 0.62
+.zebra  .card-print-preview { zoom: 0.62 }

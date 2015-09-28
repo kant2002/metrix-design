@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../public/css/metrix-bootstrap.css">
+
+
+<style>
+
+		
+</style>
+</head>
+<body>
+	<div class="card-print-preview level-3" style="">
+		<div class="header-background"></div>
+		<div class="main-card-info">
+		<div class="card-access-level">
+		<!-- ngRepeat: i in [1, 2, 3, 4, 5] --><!-- ngIf: data.accessLevel >= i --><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9.215 9.072" xml:space="preserve" ng-repeat="i in [1, 2, 3, 4, 5]" ng-if="data.accessLevel >= i" class="">
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#f1cb30;" d="M6.308,5.5l2.907-1.889L5.627,3.609L4.607,0l-1.02,3.609L0,3.611
+		l2.918,1.895L1.813,9.072l2.801-2.35l2.929,2.35L6.308,5.5z"></path>
+	</svg><!-- end ngIf: data.accessLevel >= i --><!-- end ngRepeat: i in [1, 2, 3, 4, 5] --><!-- ngIf: data.accessLevel >= i --><!-- end ngRepeat: i in [1, 2, 3, 4, 5] --><!-- ngIf: data.accessLevel >= i --><!-- end ngRepeat: i in [1, 2, 3, 4, 5] --><!-- ngIf: data.accessLevel >= i --><!-- end ngRepeat: i in [1, 2, 3, 4, 5] --><!-- ngIf: data.accessLevel >= i --><!-- end ngRepeat: i in [1, 2, 3, 4, 5] -->
+		</div>
+			<div class="card-person-name ng-binding"> ФИО</div>
+			<div class="card-person-title ng-binding">Должность</div>
+			<div class="card-person-department ng-binding">LOT 2</div>
+		</div>
+		<div class="card-image">
+			<img src="">
+		</div>
+		<div class="card-number ng-binding">
+			Person# DG-KZ1462
+		</div>
+		<div class="card-footer">
+			<div class="card-company-info">
+				<div class="card-company-logo">
+			<img src="img/logo-dogus-gulsan-transparent.png">
+		</div>
+				<p>
+					128A, Abaya st., Esik town<br>
+					Almaty region, Kazakhstan<br>
+					http://dogusgulsanjv.kz
+				</p>
+			</div>
+			<div class="card-qr-holder">
+		<qr text="'metrix://person/' + data.id" type-number="3" correction-level="H" size="110" input-mode="ALPHA_NUM" image="true" class="ng-isolate-scope">
+		<!-- ngIf: image -->
+		<img ng-if="image" ng-src="data:image/png;base64,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" class="ng-scope" src="data:image/png;base64,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"><!-- end ngIf: image --></qr>
+			</div>
+		</div>
+	</div>
+				
+	
+</body>
