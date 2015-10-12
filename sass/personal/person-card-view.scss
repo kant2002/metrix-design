@@ -49,12 +49,14 @@
 }
 
 .card-person-department,
-.card-person-title {
+.card-person-title,
+.card-person-company {
   font-size: 21px;
   color: #454545 !important;
   padding-bottom: 8px;
   text-transform: uppercase;
 }
+
 
 .card-image {
   border-radius: 50%;
@@ -69,6 +71,7 @@
 .card-image img {
   width: 100%;
   border-radius: 50%;
+  height: 100%;
 }
 
 .card-access-level {
