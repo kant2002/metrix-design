@@ -151,3 +151,28 @@
 
 // Zebra printing has scale ration 0.62
 .zebra  .card-print-preview { zoom: 0.62 }
+
+/* View of card ins small monitor*/
+.card-print-preview.small {
+  width: 90%;
+  padding:0;
+  margin-bottom: 5%;
+}
+.card-print-preview.small .card-image { 
+  left: 22%;
+  top: 2%;
+  width: 160px;
+  height: 156px;
+}
+
+.card-print-preview.small .main-card-info{
+  height: 173px;
+  padding-top: 17px;
+}
+
+.card-print-preview.small .header-background
+{
+  height: 140px;
+  background-color: #cbccd0 !important;
+}
+/*-- End --*/
